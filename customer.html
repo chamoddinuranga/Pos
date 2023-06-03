@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <style>
+
+    .input-group {
+      /*width: 570px;*/
+    }
+
+    .input-group mb-3{
+      width: 370px;
+    }
+    #searchCus{
+      width: 370px;
+    }
+  </style>
+</head>
+<body style="background-image: url('assets/images/image4.jpg'); background-size: cover;">
+<!--Customer Form-->
+<header>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 56px">
+    <div  class="container-fluid">
+      <a class="navbar-brand" href="index.html">Customer Form</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="customer.html">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="item.html">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+        </ul>
+        <div class="rounded-3 p-2 mx-5" style="background-color: #f5412c; margin-top: 30px;">
+          <h1 class="text-center mb-3"><i class="bi bi-people-fill m-2"></i>A+ Store</h1>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!--    Customer Form-->
+<section class="container-fluid" id="customer">
+
+  <br>
+  <div class="row g-3 align-items-center pb-3 justify-content-between mx-5">
+    <div class="col-12 col-md-6 col-xl-6" style="margin-left: -8px;width: 622px;">
+      <div class="input-group mb-3" style="height: 10px;">
+
+        <!-- customer Id-->
+
+        <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
+               placeholder="Customer Id" type="text">
+
+        <button class="btn btn-primary"  type="button"><i
+                class="bi bi-search m-2"></i>Search
+        </button>
+        <button style="background-color: #24ea24;color: black" type="button" class="btn btn-primary mx-5">+ New Customer</button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <section>
+    <div class="row gap-3  mx-5 col-5 col-md-4 col-lg-3">
+
+      <div class="row">
+        <input type="text" class="form-control" placeholder="Customer name" aria-label="Customer name">
+      </div>
+      <div class="row">
+        <input type="text" class="form-control" placeholder="Customer address" aria-label="Customer address">
+      </div>
+      <div class="row">
+        <input type="text" class="form-control" placeholder="Customer salary" aria-label="Customer salary">
+      </div>
+    </div>
+  </section>
+  <br>
+  <div style="margin-left: 49px;">
+
+    <button class="btn btn-danger mt-2" data-bs-target="#removeCustomer" data-bs-toggle="modal"
+            type="button"><i class="bi bi-person-plus-fill m-2"></i>Delete Customer
+    </button>
+    <button class="btn btn-warning mt-2" data-bs-target="#updateCustomer" data-bs-toggle="modal"
+            type="button"><i class="bi bi-person-plus-fill m-2"></i>Update Customer
+    </button>
+    <button class="btn btn-secondary mt-2"  type="button"><i class="bi bi-backspace m-2"></i>Clear
+    </button>
+  </div>
+
+  <section>
+    <div class="row align-items-center pt-3 mx-5">
+      <div class="col-12 mt-5">
+        <div class="table-responsive" style="height: 70vh;">
+          <table class="table table-light table-hover text-center table-bordered">
+            <thead class="table-dark">
+            <tr>
+              <th>Customer ID</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Salary</th>
+            </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section>
+
+</section>
+</body>
+</html>
